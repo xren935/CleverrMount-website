@@ -1,5 +1,4 @@
 import React from "react";
-import { FaAmazon, FaFacebook, FaInstagramSquare } from "react-icons/fa";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from "../static/App.css";
 

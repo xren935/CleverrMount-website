@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.5.3",
     "bootstrap-icons": "^1.0.0",
+    "mdbreact": "^4.27.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^16.13.1",
@@ -42,6 +43,6 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "app.jsx",
   "devDependencies": {},
-  "author": "",
+  "author": "Xingya Annie Ren",
   "license": "ISC"
 }

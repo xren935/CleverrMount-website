@@ -68,13 +68,14 @@ h1, h2, p {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+
 .about-img {
   /* background-image: url(./img/product.jpg); */
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.762)), url(./img/product.jpg); */
   width: 350px;
   height: 350px;
   margin-left: 50px;
-  background-image: url('./img/product.jpg');
+  background-image: url('./img/prod3.png');
   background-size: cover;
   display: block;
   border-radius: 60%;
@@ -98,37 +99,111 @@ h1, h2, p {
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
-.products .container .row .col-md-12 h1 {
+.products .container .row .col-md-12 h1{
   color: whitesmoke;
+  margin-bottom: 100px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
-/* .d-block w-100 {
-  width: 350px;
-  height: 350px;
-  margin-left: 50px;
-  background-image: url('./img/product.jpg');
-  background-size: cover;
-  display: block;
-  border-radius: 60%;
-    -webkit-border-radius: 60%;
-    -moz-border-radius: 60%;
-  margin-top: 30px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-  text-align: center;
-} */
-.carousel {
-  width: 100% !important;
-  height: 75vh;
+/* .carousel {
+
   place-items: center; 
+} */
+
+.carousel img {
+  height: 400px;
+  width: 300px;
 }
 
 .prod1 {
   background-image: url('../static/img/prod1.png');
   height: 75vh;
   padding-left: 300px;
-  repeat: none;
-
+  background-repeat: none; 
 }
 
+.carousel-fade .carousel-item, .carousel-item img  {
+  max-height: 90vh;
+}
+
+#prod-one {
+  width: 60%;
+  margin-left: 20%;
+}
+
+@media screen and (min-width: 650px){
+  .carousel-caption {
+    width:200px;
+    z-index:10;
+    color:#fff;
+    text-align:center;
+    top:50%;
+    left:65%;
+    bottom:auto;
+    -webkit-transform:translate(0, -50%);
+    -ms-transform:translate(0, -50%);
+    transform:translate(0, -50%);
+  }
+}
+
+/* smaller screen -> caption on the bottom */
+@media screen and (max-width: 600px){
+  .carousel-caption {
+    top: 75%;
+  }
+}
+
+.contact {
+  width: 100%;
+  width: 100%;
+  padding: 40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding: 40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image:url('./img/bike.png'); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Background styles */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#help{
+  color: rgb(66, 65, 65);
+  box-shadow: rgba(0, 0, 0, 0.214) 0px 5px 5px 2px;
+  background-color: rgba(245, 245, 245, 0.849);
+  padding: 20px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+#contact-form {
+  border: 1px solid transparent;
+  box-shadow: rgba(0, 0, 0, 0.521) 0px 5px 5px 2px;
+  background: #fa842393;
+  border-radius: 4px;
+  padding: 20px;
+  top:10px;
+  margin-top: 40px;
+  font-weight: bold;
+  font-family: 'Quicksand', 'sans-serif';
+}
+
+#bottom-icon a{
+  display: inline;
+  padding: 40px;
+  align-items: center;
+  color: #fa8423;
+}
+
+#bottom-icon a:hover{
+  color: black;
+}

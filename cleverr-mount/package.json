@@ -2,6 +2,7 @@
   "name": "cleverr-mount",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://xren935.github.io/cleverr-mount-website",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-regular-svg-icons": "^5.15.1",
@@ -21,6 +22,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

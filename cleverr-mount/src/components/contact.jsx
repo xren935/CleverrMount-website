@@ -73,7 +73,8 @@ class Contact extends React.Component {
             </div>
           </div>
           <div class="row">
-            <div class="col-12" id="bottom-icon">
+            <br />
+            <div class="col-md-12" id="bottom-icon">
                   <a href="http://www.google.ca" target="_blank">
                     <FaFacebook size="50px" />
                   </a>

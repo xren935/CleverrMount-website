@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/cleverr-mount-website/static/css/main.2248c8fe.chunk.css",
-    "main.js": "/cleverr-mount-website/static/js/main.4ac230a3.chunk.js",
-    "main.js.map": "/cleverr-mount-website/static/js/main.4ac230a3.chunk.js.map",
+    "main.css": "/cleverr-mount-website/static/css/main.75009bd9.chunk.css",
+    "main.js": "/cleverr-mount-website/static/js/main.853e021b.chunk.js",
+    "main.js.map": "/cleverr-mount-website/static/js/main.853e021b.chunk.js.map",
     "runtime-main.js": "/cleverr-mount-website/static/js/runtime-main.1502ceec.js",
     "runtime-main.js.map": "/cleverr-mount-website/static/js/runtime-main.1502ceec.js.map",
     "static/css/2.2a86faee.chunk.css": "/cleverr-mount-website/static/css/2.2a86faee.chunk.css",
-    "static/js/2.8d83d745.chunk.js": "/cleverr-mount-website/static/js/2.8d83d745.chunk.js",
-    "static/js/2.8d83d745.chunk.js.map": "/cleverr-mount-website/static/js/2.8d83d745.chunk.js.map",
+    "static/js/2.cb97f12b.chunk.js": "/cleverr-mount-website/static/js/2.cb97f12b.chunk.js",
+    "static/js/2.cb97f12b.chunk.js.map": "/cleverr-mount-website/static/js/2.cb97f12b.chunk.js.map",
     "index.html": "/cleverr-mount-website/index.html",
-    "precache-manifest.8a78ed29895d2837a3e610bf762230e5.js": "/cleverr-mount-website/precache-manifest.8a78ed29895d2837a3e610bf762230e5.js",
+    "precache-manifest.9eaa498db86c23fc18ac96535982148b.js": "/cleverr-mount-website/precache-manifest.9eaa498db86c23fc18ac96535982148b.js",
     "service-worker.js": "/cleverr-mount-website/service-worker.js",
     "static/css/2.2a86faee.chunk.css.map": "/cleverr-mount-website/static/css/2.2a86faee.chunk.css.map",
-    "static/css/main.2248c8fe.chunk.css.map": "/cleverr-mount-website/static/css/main.2248c8fe.chunk.css.map",
-    "static/js/2.8d83d745.chunk.js.LICENSE.txt": "/cleverr-mount-website/static/js/2.8d83d745.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/cleverr-mount-website/static/media/bike.da417ffa.png",
+    "static/css/main.75009bd9.chunk.css.map": "/cleverr-mount-website/static/css/main.75009bd9.chunk.css.map",
+    "static/js/2.cb97f12b.chunk.js.LICENSE.txt": "/cleverr-mount-website/static/js/2.cb97f12b.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/cleverr-mount-website/static/media/logo.d65332a3.png",
     "static/media/prod1.png": "/cleverr-mount-website/static/media/prod1.65202bbf.png",
     "static/media/prod2.png": "/cleverr-mount-website/static/media/prod2.d3c8d569.png",
     "static/media/prod3.png": "/cleverr-mount-website/static/media/prod3.a2d19b42.png",
@@ -24,8 +24,8 @@
   "entrypoints": [
     "static/js/runtime-main.1502ceec.js",
     "static/css/2.2a86faee.chunk.css",
-    "static/js/2.8d83d745.chunk.js",
-    "static/css/main.2248c8fe.chunk.css",
-    "static/js/main.4ac230a3.chunk.js"
+    "static/js/2.cb97f12b.chunk.js",
+    "static/css/main.75009bd9.chunk.css",
+    "static/js/main.853e021b.chunk.js"
   ]
 }

@@ -5,10 +5,13 @@ import Header from './components/header';
 import About from './components/about';
 import Products from './components/products';
 import Contact from './components/contact';
+import Popup from './components/popup';
+
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Popup />
     <Header />
     <About />
     <Products />

@@ -53,9 +53,19 @@
 }
 
 @media screen and (max-width: 600px){
+  .hero-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.762)), url(./img/phonebackground.png);
+  }
+
   .hero-text{
     padding-top: 200px;
   }
+
+  .hero-text hr {
+    /* max-width: 200px; */
+    width: auto;
+  }
+
   .hero-text p {
     font-size: 20px;
     place-items: center;
@@ -74,6 +84,7 @@
 
 .cover hr {
   border: 3.5px dotted whitesmoke; 
+  width: 50%;
 }
 
 h1, h2, p {

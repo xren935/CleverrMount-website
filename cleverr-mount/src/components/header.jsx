@@ -10,7 +10,7 @@ class Header extends React.Component {
   render() {
     return (
       <div class="cover">
-        <Navbar bg="light" expand="lg" style={{ width: "100vw" }}>
+        <Navbar bg="light" expand="lg" style={{ width: "100vw", padding: "1em", backgroundColor: "#FF0000" }}>
           <Navbar.Brand href="#home">CleverrMount</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -48,7 +48,7 @@ class Header extends React.Component {
           <div class="container">
             <div class="row">
               <div class="col-lg-12">
-                <h1>Cleverr Mount</h1>
+                <h1><b>Cleverr Mount</b></h1>
                 <p>everything you need to mount anything</p>
                 <hr></hr>
               </div>

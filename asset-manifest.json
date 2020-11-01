@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cleverr-mount-website/static/css/main.75009bd9.chunk.css",
+    "main.css": "/cleverr-mount-website/static/css/main.96c824b9.chunk.css",
     "main.js": "/cleverr-mount-website/static/js/main.853e021b.chunk.js",
     "main.js.map": "/cleverr-mount-website/static/js/main.853e021b.chunk.js.map",
     "runtime-main.js": "/cleverr-mount-website/static/js/runtime-main.1502ceec.js",
@@ -9,12 +9,12 @@
     "static/js/2.cb97f12b.chunk.js": "/cleverr-mount-website/static/js/2.cb97f12b.chunk.js",
     "static/js/2.cb97f12b.chunk.js.map": "/cleverr-mount-website/static/js/2.cb97f12b.chunk.js.map",
     "index.html": "/cleverr-mount-website/index.html",
-    "precache-manifest.9eaa498db86c23fc18ac96535982148b.js": "/cleverr-mount-website/precache-manifest.9eaa498db86c23fc18ac96535982148b.js",
+    "precache-manifest.7055a091b34c78efced90ea82f79fe1e.js": "/cleverr-mount-website/precache-manifest.7055a091b34c78efced90ea82f79fe1e.js",
     "service-worker.js": "/cleverr-mount-website/service-worker.js",
     "static/css/2.2a86faee.chunk.css.map": "/cleverr-mount-website/static/css/2.2a86faee.chunk.css.map",
-    "static/css/main.75009bd9.chunk.css.map": "/cleverr-mount-website/static/css/main.75009bd9.chunk.css.map",
+    "static/css/main.96c824b9.chunk.css.map": "/cleverr-mount-website/static/css/main.96c824b9.chunk.css.map",
     "static/js/2.cb97f12b.chunk.js.LICENSE.txt": "/cleverr-mount-website/static/js/2.cb97f12b.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/cleverr-mount-website/static/media/logo.d65332a3.png",
+    "static/media/App.css": "/cleverr-mount-website/static/media/phonebackground.efdf912c.png",
     "static/media/prod1.png": "/cleverr-mount-website/static/media/prod1.65202bbf.png",
     "static/media/prod2.png": "/cleverr-mount-website/static/media/prod2.d3c8d569.png",
     "static/media/prod3.png": "/cleverr-mount-website/static/media/prod3.a2d19b42.png",
@@ -25,7 +25,7 @@
     "static/js/runtime-main.1502ceec.js",
     "static/css/2.2a86faee.chunk.css",
     "static/js/2.cb97f12b.chunk.js",
-    "static/css/main.75009bd9.chunk.css",
+    "static/css/main.96c824b9.chunk.css",
     "static/js/main.853e021b.chunk.js"
   ]
 }

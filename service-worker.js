@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/cleverr-mount-website/precache-manifest.9eaa498db86c23fc18ac96535982148b.js"
+  "/cleverr-mount-website/precache-manifest.7055a091b34c78efced90ea82f79fe1e.js"
 );
 
 self.addEventListener('message', (event) => {

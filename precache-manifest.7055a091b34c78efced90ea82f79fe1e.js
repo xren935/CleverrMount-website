@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "adc94ac00163a0547b547ed77bc731ca",
+    "revision": "476022f2694772c4bff22af9b8ee1e52",
     "url": "/cleverr-mount-website/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cleverr-mount-website/static/css/2.2a86faee.chunk.css"
   },
   {
-    "revision": "b37ff29787fcb21b0cdf",
-    "url": "/cleverr-mount-website/static/css/main.75009bd9.chunk.css"
+    "revision": "a7f2770e7eac9e5a9dbb",
+    "url": "/cleverr-mount-website/static/css/main.96c824b9.chunk.css"
   },
   {
     "revision": "15d976a633c1e819e09c",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cleverr-mount-website/static/js/2.cb97f12b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b37ff29787fcb21b0cdf",
+    "revision": "a7f2770e7eac9e5a9dbb",
     "url": "/cleverr-mount-website/static/js/main.853e021b.chunk.js"
   },
   {
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d65332a37854a159091b55e31966297e",
     "url": "/cleverr-mount-website/static/media/logo.d65332a3.png"
+  },
+  {
+    "revision": "efdf912c7e7abf489fafe0029fb4bb21",
+    "url": "/cleverr-mount-website/static/media/phonebackground.efdf912c.png"
   },
   {
     "revision": "65202bbf0baa2ae5f891fca4b8d5ea3e",

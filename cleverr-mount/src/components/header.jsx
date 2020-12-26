@@ -5,6 +5,7 @@ import styles from "../static/App.css";
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from "react-bootstrap";
 import { Form, Button, FormControl } from "react-bootstrap";
 import { Modal } from "react-bootstrap";
+import logo from '../static/img/header-logo.png';
 
 class Header extends React.Component {
   render() {
@@ -45,12 +46,12 @@ class Header extends React.Component {
         </Navbar>
         <div class="hero-image" />
         <div class="hero-text">
-          <div class="container">
+          <div class="container" id="header-container">
             <div class="row">
               <div class="col-lg-12">
+                {/* <img src={logo}></img> */}
                 <h1><b>Cleverr Mount</b></h1>
-                <p>everything you need to mount anything</p>
-                <hr></hr>
+                <p>GET HOOKED</p>
               </div>
             </div>
             <div class="row">

@@ -1,14 +1,37 @@
-.modal {
-    align-self: center;
-    padding-top: 10%;
+.modal{
+    padding-top: 30vh;
 }
 
-.modal-content {
-    color: red;
-    
+.modal-header {
+    border-bottom: none;
 }
 
 #popup {
-    background-color: rgba(255, 234, 0, 0.925);
+    background-color: rgba(255, 255, 0, 0.781);
     color: black;
+    border: 5px solid rgba(255, 166, 0, 0.74);
+    box-shadow: orange 5px 10px;
+}
+
+input {
+    background-color: orange;
+    font-size: 20px;
+}
+
+#email-inputbox {
+    margin-left: 10px;
+    padding: 5px;
+    background-color: rgba(255, 166, 0, 0.349);
+    border: solid grey 2px;
+}
+
+#email-inputbox:hover {
+    background-color: rgba(189, 182, 171, 0.705);
+    border: solid grey 2px;
+}
+#submit-btn {
+    background-color:rgba(255, 166, 0, 0.74);
+    margin-left: 30%;
+    padding: 5px;
+    font-size: 25px;
 }

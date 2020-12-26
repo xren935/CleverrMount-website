@@ -6,12 +6,14 @@ import About from './components/about';
 import Products from './components/products';
 import Contact from './components/contact';
 import Popup from './components/popup';
+import ScrollToTop from './components/scrollToTop';
 
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
     <Popup />
+    <ScrollToTop />
     <Header />
     <About />
     <Products />

@@ -1,0 +1,14 @@
+.modal {
+    align-self: center;
+    padding-top: 10%;
+}
+
+.modal-content {
+    color: red;
+    
+}
+
+#popup {
+    background-color: rgba(255, 234, 0, 0.925);
+    color: black;
+}

@@ -1,37 +1,8 @@
 import { Modal, Button } from "react-bootstrap";
 import React from "react";
 import ReactDOM from 'react-dom';
-// const emailpopup = function () {
-// //   const [show, setShow] = useState(false);
+import "../static/popup.css";
 
-// //   const handleClose = () => setShow(false);
-// //   const handleShow = () => setShow(true);
-
-//   return (
-//     <>
-//       <Button variant="primary" onClick={handleShow}>
-//         Launch demo modal
-//       </Button>
-
-//       <Modal show={show} onHide={handleClose}>
-//         <Modal.Header closeButton>
-//           <Modal.Title>Modal heading</Modal.Title>
-//         </Modal.Header>
-//         <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-//         <Modal.Footer>
-//           <Button variant="secondary" onClick={handleClose}>
-//             Close
-//           </Button>
-//           <Button variant="primary" onClick={handleClose}>
-//             Save Changes
-//           </Button>
-//         </Modal.Footer>
-//       </Modal>
-//     </>
-//   );
-// };
-
-// export default emailpopup;
 class Popup extends React.Component {
     constructor(props) {
         super(props);
@@ -53,9 +24,10 @@ class Popup extends React.Component {
     
     render() {
         return(
-            <div>
+            <div style={{boarder: "20px red"}}>
                 {/* <Button variant="primary" onClick={this.handleShow}>Launch modal</Button> */}
                 <Modal show={this.state.show} onHide={this.handleClose}>
+                    <div id="popup">
                     <Modal.Header closeButton>
                         <Modal.Title>Connect with us!</Modal.Title>
                     </Modal.Header>
@@ -66,6 +38,7 @@ class Popup extends React.Component {
                         <Button variant="secondary" onClick={this.handleClose}>Close</Button>
                         <Button variant="primary">Submit</Button>
                     </Modal.Footer>
+                    </div>
                 </Modal>
             </div>
         );

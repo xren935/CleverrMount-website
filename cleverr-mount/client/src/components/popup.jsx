@@ -31,12 +31,13 @@ class Popup extends React.Component {
         if(this.state.emailValid){
             alert(this.state.useremail);
             // post to database
-            axios.post('http://localhost:4000/users/create', this.state.useremail)
-                .then((res) => {
-                    console.log(res.data)
-                }).catch((error) => {
-                    console.log(error)
-                });
+            // axios.post('/addemail', this.state.useremail)
+            //     .then((res) => {
+            //         console.log(res.data)
+            //     }).catch((error) => {
+            //         console.log(error)
+            //     });
+            
             this.setState({useremail:''})
         }else{
             alert("email is invalid!");

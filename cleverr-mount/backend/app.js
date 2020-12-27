@@ -1,7 +1,10 @@
 var express = require("express");
 var app = express();
 var port = 3000;
- 
+
+var cors = require('cors');
+app.use(cors());
+app.use(cors({origin: true, credentials: true}));
 // app.get("/", (req, res) => {
 //     // res.send("Hello World");
 //     res.sendFile(__dirname+"/popup.jsx");

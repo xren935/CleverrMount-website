@@ -11,7 +11,8 @@ class Popup extends React.Component {
             show: true,
             useremail: '',
             emailError: '',
-            emailValid: false
+            emailValid: false,
+            apiResponse: ""
         };
         
         this.handleClose = this.handleClose.bind(this);
@@ -60,25 +61,32 @@ class Popup extends React.Component {
             () => { this.validateField(name, value)});
     }
 
+    // fetch API 
+    callAPI() {
+        fetch("http://localhost:9000/testAPI")
+            .then(res => res.text())
+            .then(res => this.setState({ apiResponse: res }));
+    }
+
+    componentWillMount() {
+        this.callAPI();
+    }
+
     render() {
         return(
             <div>
-                {/* <Button variant="primary" onClick={this.handleShow}>Launch modal</Button> */}
                 <Modal show={this.state.show} onHide={this.handleClose}>
                     <div id="popup">
                     <Modal.Header closeButton>
                         <Modal.Title>Enter your email to get 10% off!</Modal.Title>
                     </Modal.Header>
-                    <form method="post" action="/addemail">
                     <Modal.Body>
-                        <label>
-                            Your Email: 
-                            <input id="email-inputbox" type="text" name="useremail" onChange={this.setUserEmail}/>
-                        </label>
-                        <br></br>
-                        <input id="submit-btn" type="submit" value="Get 10% Off" onClick={this.submitForm}/>
+                        <form method="post" action="/addemail">
+                            <label>Your email: </label>
+                            <input type="text" name="useremail" placeholder="Enter your email..." required/>
+                            <input type="submit" value="Add Email"/>
+                        </form>
                     </Modal.Body>
-                    </form>
                     </div>
                 </Modal>
             </div>

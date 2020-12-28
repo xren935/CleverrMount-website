@@ -2,16 +2,19 @@ var express = require("express");
 var app = express();
 var port = 3000;
 
-var cors = require('cors');
-app.use(cors());
-app.use(cors({origin: true, credentials: true}));
+// var cors = require('cors');
+// app.use(cors());
+// app.use(cors({origin: true, credentials: true}));
 // app.get("/", (req, res) => {
 //     // res.send("Hello World");
 //     res.sendFile(__dirname+"/popup.jsx");
 // });
+
 const path = require('path');
+app.use(express.static(path.join(__dirname, 'build')));
 app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  // res.sendFile(__dirname+"/index.html");
 });
 
 app.listen(port, () => {
@@ -26,7 +29,7 @@ const mongoose = require('mongoose');
 mongoose.connect("mongodb://localhost:27017/emailDB", {useNewUrlParser: true});
 
 const emailSchema = new mongoose.Schema ({
-    email: String
+    useremail: String
 });
 
 const Email = mongoose.model("Email", emailSchema);
@@ -36,10 +39,11 @@ const Email = mongoose.model("Email", emailSchema);
 // });
 
 // email.save();
+// console.log("inside app.js")
 
 app.post("/addemail", (req, res) => {
-    var myData = new Email(req.body);
-    myData.save()
+    var newEmail = new Email(req.body);
+    newEmail.save()
       .then(item => {
         res.send("item saved to database");
       })

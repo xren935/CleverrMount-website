@@ -2,7 +2,6 @@ import React from "react";
 import { FaAmazon, FaFacebook, FaInstagramSquare } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../static/header.css";
-import styles from "../static/App.css";
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from "react-bootstrap";
 import { Spring } from "react-spring/renderprops";
 import Aos from "aos";

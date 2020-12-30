@@ -3,6 +3,7 @@ import React from "react";
 import ReactDOM from 'react-dom';
 import "../static/popup.css";
 import axios from 'axios';
+import { ThemeConsumer } from "react-bootstrap/esm/ThemeProvider";
 
 class Popup extends React.Component {
     constructor(props) {
@@ -27,38 +28,24 @@ class Popup extends React.Component {
         this.setState({ show: true });
     };
     
+    saveEmail = (event) => {
+        let emailentered = event.target.value;
+        console.log(emailentered);
+        this.setState({ useremail: emailentered});
+    }
+
     submitForm = (event) => {
         event.preventDefault();
-        if(this.state.emailValid){
-            alert(this.state.useremail);
-            // post to database
-            // axios.post('/addemail', this.state.useremail)
-            //     .then((res) => {
-            //         console.log(res.data)
-            //     }).catch((error) => {
-            //         console.log(error)
-            //     });
-            
-            this.setState({useremail:''})
+        const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        let valid = regex.test(String(this.state.useremail).toLowerCase());
+        console.log(valid);
+        this.setState({ emailValid: valid});
+        if(valid){
+            alert("thanks for signing up!");
+            this.handleClose(); 
         }else{
             alert("email is invalid!");
         }
-    }
-
-    validateField(fieldName, value) {
-        let fieldValidationErrors = this.state.emailError;
-        let emailValid = this.state.emailValid;
-        emailValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
-        fieldValidationErrors = emailValid ? '' : ' is invalid';
-        this.setState({emailError: fieldValidationErrors, emailValid: emailValid});
-    }
-
-    setUserEmail = (event) => {
-        let name = event.target.name;
-        let value = event.target.value;
-        // this.setState({[nam]: val});
-        this.setState({[name]: value}, 
-            () => { this.validateField(name, value)});
     }
 
     // fetch API 
@@ -78,13 +65,12 @@ class Popup extends React.Component {
                 <Modal show={this.state.show} onHide={this.handleClose}>
                     <div id="popup">
                     <Modal.Header closeButton>
-                        <Modal.Title>Enter your email to get 10% off!</Modal.Title>
+                        <h3>Sign up with us for 10% off your next purchase!</h3>
                     </Modal.Header>
                     <Modal.Body>
-                        <form method="post" action="/addemail">
-                            <label>Your email: </label>
-                            <input type="text" name="useremail" placeholder="Enter your email..." required/>
-                            <input type="submit" value="Add Email"/>
+                        <form method="post" action="/">
+                            <input type="text" name="useremail" placeholder="Enter your email..." required onChange={this.saveEmail}/>
+                            <input type="submit" value="Sign up" style={{marginLeft: "15px"}} onClick={this.submitForm}/>
                         </form>
                     </Modal.Body>
                     </div>

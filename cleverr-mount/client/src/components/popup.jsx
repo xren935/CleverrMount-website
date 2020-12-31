@@ -18,6 +18,7 @@ class Popup extends React.Component {
         
         this.handleClose = this.handleClose.bind(this);
         this.handleShow = this.handleShow.bind(this);
+        this.submitForm = this.submitForm.bind(this);
     }
     
     handleClose (){
@@ -35,7 +36,7 @@ class Popup extends React.Component {
     }
 
     submitForm = (event) => {
-        event.preventDefault();
+        // event.preventDefault();
         const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         let valid = regex.test(String(this.state.useremail).toLowerCase());
         console.log(valid);
@@ -68,13 +69,14 @@ class Popup extends React.Component {
                         <h3>Sign up with us for 10% off your next purchase!</h3>
                     </Modal.Header>
                     <Modal.Body>
-                        <form method="post" action="/">
+                        <form method="post" action="/" onSubmit={this.submitForm}>
                             <input type="text" name="useremail" placeholder="Enter your email..." required onChange={this.saveEmail}/>
-                            <input type="submit" value="Sign up" style={{marginLeft: "15px"}} onClick={this.submitForm}/>
+                            <input type="submit" value="Sign up" style={{marginLeft: "15px"}} />
                         </form>
                     </Modal.Body>
                     </div>
                 </Modal>
+                <div>{this.handleClose}</div>
             </div>
         );
     }

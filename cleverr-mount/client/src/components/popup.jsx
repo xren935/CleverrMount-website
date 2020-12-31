@@ -41,7 +41,7 @@ class Popup extends React.Component {
         console.log(valid);
         this.setState({ emailValid: valid});
         if(valid){
-            alert("thanks for signing up!");
+            alert("Thanks for signing up! Use the code CLEVERR10 to get 10% off your next purchase. Happy shopping!");
             this.handleClose(); 
         }else{
             alert("email is invalid!");

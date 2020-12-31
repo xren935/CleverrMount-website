@@ -16,16 +16,17 @@ class Contact extends React.Component {
                   <li>General Product Inquiry</li>
                   <li>Business Collaboration</li>
                   <li>Job Opportunities</li>
-                  <li>Sales & Factory Tour Inquiries</li>
+                  <li>Sales and Factory Tour Inquiries</li>
                   <li>And More...</li>
                 </ul>
               </div>
             </div>
+            {/* // sends an email to cleverrmountwebsite@gmail.com */}
             <div class="col-lg-7" id="contact-form">
               <h3>Contact Us!</h3>
               <form
                 class="form-horizontal"
-                action="https://formspree.io/f/xrgoqyjn"
+                action="https://formspree.io/f/xnqoowkq"
                 method="POST"
               >
                 <fieldset>
